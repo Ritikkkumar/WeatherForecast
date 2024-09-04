@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="jsFinal.js" defer></script>
+</head>
+<body class="bg-blue-300">
+    <header class="h-16 bg-blue-800 text-center flex justify-center items-center rounded-br-lg rounded-bl-lg">
+        <h1 class="text-white font-bold text-2xl">Weather Forecast</h1>
+    </header>
+    <section class=" mt-8 md:flex md:justify-around md:flex-wrap">
+        <article class="flex flex-col items-center">
+            
+            <h1 class="font-bold text-xl ml-5 mb-2 md:text-3xl">Enter a city name</h1>
+            <div class="relative z-10">
+            <input type="text" class="w-80 mb-4 rounded-md lg:w-96 lg:h-10 lg:mt-3">
+            <div class="absolute z-20 bottom-4 left-[225px] lg:left-[272px]">
+            <select id="cities" class="lg:w-28 lg:h-10 rounded-lg bg-slate-600 h-6 w-24  ">
+            </select>
+            </div>
+            </div>
+            <button  id="searchButton" class="bg-blue-700 w-80 mb-5 text-white text-lg font-bold h-8 rounded-md lg:w-96 lg:h-10">Search</button>
+            <div class="flex justify-center items-center mb-4">
+                <div class="w-32 h-1 bg-black mr-2 lg:w-40"></div>
+                <div class="font-bold">or</div>
+                <div class="w-32 h-1 bg-black ml-2 lg:w-40"></div>
+            </div>
+            <button id="locationButton" class="bg-slate-600 w-80 mb-5 text-white text-lg font-bold h-8 rounded-md lg:w-96 lg:h-10">Use Current Location</button>
+        </article>
+        <article class="hidden wheatherBox ">
+            <div class="bg-blue-700 h-60 w-80 flex flex-col justify-center items-center text-white rounded-md lg:w-[700px] ">
+                <p class="text-6xl mb-5">🌦️</p>
+                <p class="font-bold text-2xl">London (2024-04-23)</p>
+                <p id="temp">Temprature:7.06 c</p>
+                <p>Wind:2.85 M/S</p>
+                <p>Hummidity:88%</p>
+            </div>
+            </article>
+            <article class="md:flex md:flex-wrap md:gap-5 md:justify-center md:items-center md:mt-7 ml-8 79">
+            <div class=" hidden gap-7 h-40 w-80 mt-5 wheatherBox">
+                <div class="h-40 w-36 bg-slate-500 flex flex-col justify-center items-center font-bold text-white rounded-md days">
+                    <p>17-08-2024</p> 
+                    <p class="text-3xl">☁️</p>
+                    <p>Temp:7.06 c</p>
+                    <p>Wind:2.85 M/S</p>
+                    <p>Hummidity:88%</p>
+                </div>
+                <div class="h-40 w-36 bg-slate-500 flex flex-col justify-center items-center font-bold text-white rounded-md days">
+                    <p>17-08-2024</p>
+                    <p class="text-3xl">☁️</p>
+                    <p>Temp:7.06 c</p>
+                    <p>Wind:2.85 M/S</p>
+                    <p>Hummidity:88%</p>
+                </div>
+            </div>
+            
+            <div class=" hidden gap-7 h-40 w-80 mt-5 wheatherBox">
+                <div class="h-40 w-36 bg-slate-500 flex flex-col justify-center items-center font-bold text-white rounded-md days">
+                    <p>17-08-2024</p>
+                    <p class="text-3xl">☁️</p>
+                    <p>Temp:7.06 c</p>
+                    <p>Wind:2.85 M/S</p>
+                    <p>Hummidity:88%</p>
+                </div>
+                <div class="h-40 w-36 bg-slate-500 flex flex-col justify-center items-center font-bold text-white rounded-md days">
+                    <p>17-08-2024</p>
+                    <p class="text-3xl">☁️</p>
+                    <p>Temp:7.06 c</p>
+                    <p>Wind:2.85 M/S</p>
+                    <p>Hummidity:88%</p>
+                </div>
+            </div>
+
+            <div class=" hidden gap-7 h-40 w-80 mt-5 wheatherBox">
+                <div class="h-40 w-36 bg-slate-500 flex flex-col justify-center items-center font-bold text-white rounded-md days">
+                    <p>17-08-2024</p>
+                    <p class="text-3xl">☁️</p>
+                    <p>Temp:7.06 c</p>
+                    <p>Wind:2.85 M/S</p>
+                    <p>Hummidity:88%</p>
+                </div>
+                <div class="h-40 w-36 bg-slate-500 flex flex-col justify-center items-center font-bold text-white rounded-md days">
+                    <p>17-08-2024</p>
+                    <p class="text-3xl">☁️</p>
+                    <p>Temp:7.06 c</p>
+                    <p>Wind:2.85 M/S</p>
+                    <p>Hummidity:88%</p>
+                </div>
+            </div>
+            </article>
+        </article>
+    </section>
+</body>
+</html>
